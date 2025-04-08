@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Tracking Pixel</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .parameter-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .parameter-table th, .parameter-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .parameter-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transparent Tracking Pixel</h1>
+    <p>A simple transparent 1x1 pixel image for tracking user visits and engagement on web pages.</p>
+    
+    <h2>Usage</h2>
+    <p>Embed the tracking pixel in your Softr site using:</p>
+    <pre><code>&lt;img src="https://invite.disputedojo.com/pixel.png?source=email&campaign=launch" alt="" style="width:1px;height:1px;"/&gt;</code></pre>
+    
+    <h2>Tracking Parameters</h2>
+    <p>You can add the following parameters to track different sources and campaigns:</p>
+    
+    <table class="parameter-table">
+        <tr>
+            <th>Parameter</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>source</td>
+            <td>Traffic source</td>
+            <td>email, social, referral</td>
+        </tr>
+        <tr>
+            <td>campaign</td>
+            <td>Campaign identifier</td>
+            <td>spring2023, launch</td>
+        </tr>
+        <tr>
+            <td>medium</td>
+            <td>Marketing medium</td>
+            <td>newsletter, banner, cpc</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>Content variant for A/B testing</td>
+            <td>version_a, variant2</td>
+        </tr>
+    </table>
+    
+    <h2>Demo</h2>
+    <p>Below is the tracking pixel with demo parameters (not visible):</p>
+    <img src="pixel.png?source=demo&campaign=website_visit&medium=direct&content=homepage" alt="" style="width:1px;height:1px;"/>
+    
+    <h2>Example Code</h2>
+    <p>Full example with all tracking parameters:</p>
+    <pre><code>&lt;img src="https://invite.disputedojo.com/pixel.png?source=email&campaign=spring2023&medium=newsletter&content=version_a" alt="" style="width:1px;height:1px;"/&gt;</code></pre>
+</body>
+</html> 
